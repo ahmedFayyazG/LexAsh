@@ -16,6 +16,10 @@ module.exports = {
       },
     },
     extend: {
+
+      fontFamily: {
+        sans: ["var(--font-inter)", "sans-serif"], // or 'Inter' if not using next/font
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

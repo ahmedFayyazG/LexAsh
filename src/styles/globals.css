@@ -43,6 +43,11 @@
     --radius: 0.5rem;
   }
 
+  ::selection {
+    background-color: black;
+    color: white; /* Optional: sets the text color during selection */
+  }
+
   .dark {
     --background: 216 100% 98.04%;
     --foreground: 213.6 100% 4.9%;
@@ -76,10 +81,68 @@
   }
 }
 
-::selection {
+
+.gold-text {
+  background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
+  
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+}
+
+.gold-text::after {
+  background: none;
+  content: attr(data-heading) " ";
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  text-shadow:
+    -1px 0 1px #c6bb9f,
+    0 1px 1px #c6bb9f,
+    5px 5px 10px rgba(0, 0, 0, 0.4),
+    -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+.gold-generic-text {
+  background: linear-gradient(to bottom, #cfc09f 27%, #ffecb3 40%, #3a2c0f 78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  position: relative;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+}
+
+.gold-generic-text::after {
+  background: none;
+  content: attr(data-heading) " ";
+  left: 0;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  text-shadow:
+    -1px 0 1px #c6bb9f,
+    0 1px 1px #c6bb9f,
+    5px 5px 10px rgba(0, 0, 0, 0.4),
+    -5px -5px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* ::selection {
   background-color: hsl(var(--primary));
   color: hsl(var(--primary-foreground));
-}
+} */
 
 ::-webkit-scrollbar {
   width: 5px;

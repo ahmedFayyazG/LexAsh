@@ -1,144 +1,96 @@
-import Icons from "@/components/global/icons"
-import { Heart } from 'lucide-react'
-import Link from 'next/link'
+import Icons from "@/components/global/icons";
+import { Heart } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
-    return (
-        <footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32">
+  return (
+    <section className="w-full bg-black text-white relative px-6 pt-20 pb-10">
+      {/* Background Glow Effects */}
+      <div className="hidden lg:block absolute -top-1/3 -right-1/4 bg-indigo-600 w-72 h-72 rounded-full -z-10 blur-[14rem]" />
+      <div className="hidden lg:block absolute bottom-0 -left-1/4 bg-blue-500 w-72 h-72 rounded-full -z-10 blur-[14rem]" />
 
-            <div className="hidden lg:block absolute -top-1/3 -right-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
-            <div className="hidden lg:block absolute bottom-0 -left-1/4 bg-primary w-72 h-72 rounded-full -z-10 blur-[14rem]"></div>
+      <div className="max-w-7xl mx-auto grid gap-12 xl:grid-cols-3">
+        {/* Logo & Description */}
+        <div className="flex flex-col items-start">
+          <Image
+            src="/assets/logo.png"
+            alt="Lexington Ashworth Logo"
+            width={300}
+            height={300}
+            className="w-auto h-32 object-contain"
+          />
+          <p className="text-neutral-400 mt-4 text-sm max-w-xs">
+            Insight • Integrity • Impact.
+          </p>
+        </div>
 
-            <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
+        {/* Link Columns */}
+        <div className="xl:col-span-2 grid grid-cols-2 md:grid-cols-4 gap-10">
+          {/* Product */}
+          <div>
+            <h3 className="text-base font-semibold">Product</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-400">
+              {["Features", "Pricing", "Testimonials", "Integration"].map((item, i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-white transition-all duration-200">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                <div className="flex flex-col items-start justify-start md:max-w-[200px]">
-                    <div className="flex items-start">
-                        <Icons.logo className="w-7 h-7" />
-                    </div>
-                    <p className="text-muted-foreground mt-4 text-sm text-start">
-                        Build beautiful, functional websites, without writing code
-                    </p>
-                    <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                        Made in India with
-                        <Heart className="w-3.5 h-3.5 ml-1 fill-primary text-primary" />
-                    </span>
-                </div>
+          {/* Social */}
+          <div>
+            <h3 className="text-base font-semibold">Social</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-400">
+              {["Facebook", "Instagram", "Twitter", "LinkedIn"].map((item, i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-white transition-all duration-200">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                <div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
-                    <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div className="">
-                            <h3 className="text-base font-medium text-white">
-                                Product
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Features
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Pricing
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Testimonials
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Integration
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="mt-10 md:mt-0 flex flex-col">
-                            <h3 className="text-base font-medium text-white">
-                                Integrations
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Facebook
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Instagram
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Twitter
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        LinkedIn
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="md:grid md:grid-cols-2 md:gap-8">
-                        <div className="">
-                            <h3 className="text-base font-medium text-white">
-                                Resources
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Case Studies
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Support
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="mt-10 md:mt-0 flex flex-col">
-                            <h3 className="text-base font-medium text-white">
-                                Company
-                            </h3>
-                            <ul className="mt-4 text-sm text-muted-foreground">
-                                <li className="">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                                <li className="mt-2">
-                                    <Link href="" className="hover:text-foreground transition-all duration-300">
-                                        Terms & Conditions
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+          {/* Resources */}
+          <div>
+            <h3 className="text-base font-semibold">Resources</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-400">
+              {["Blog", "Case Studies", "Support"].map((item, i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-white transition-all duration-200">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            </div>
+          {/* Company */}
+          <div>
+            <h3 className="text-base font-semibold">Company</h3>
+            <ul className="mt-4 space-y-2 text-sm text-neutral-400">
+              {["About Us", "Privacy Policy", "Terms & Conditions"].map((item, i) => (
+                <li key={i}>
+                  <Link href="#" className="hover:text-white transition-all duration-200">
+                    {item}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
 
-            <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
-                <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                    &copy; {new Date().getFullYear()} Astra AI INC. All rights reserved.
-                </p>
-            </div>
+      {/* Footer bottom bar */}
+      <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-neutral-500">
+        &copy; {new Date().getFullYear()} Lexington Ashworth. All rights reserved.
+      </div>
+    </section>
+  );
+};
 
-        </footer>
-    )
-}
-
-export default Footer
+export default Footer;
