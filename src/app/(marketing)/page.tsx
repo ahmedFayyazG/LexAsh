@@ -83,7 +83,7 @@ const HomePage = () => {
       /> */}
         <Image
                     src="/assets/textOnlyLogo.png"
-                    alt="Lexington Ashworth Logo"
+                    alt="Lexington Ashworth Here"
                     width={1000}
                     height={1000}
                     priority
