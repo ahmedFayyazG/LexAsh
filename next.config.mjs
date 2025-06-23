@@ -5,7 +5,6 @@ const nextConfig = {
     unoptimized: true,
     domains: [
       'utfs.io',
-      'img.clerk.com',
       'subdomain',
     ],
   },
