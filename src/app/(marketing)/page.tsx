@@ -74,13 +74,21 @@ const HomePage = () => {
   {/* Content */}
   <div className="flex flex-col items-center justify-center h-full w-full px-4 text-center">
     <div className="w-full max-w-[700px] mx-auto">
-      <Image
+      {/* <Image
         src="/assets/textOnlyLogo.png"
         alt="Lexington Ashworth Logo"
         width={1000}
         height={1000}
         className="w-full h-auto object-contain"
-      />
+      /> */}
+        <Image
+                    src="/assets/textOnlyLogo.png"
+                    alt="Lexington Ashworth Logo"
+                    width={1000}
+                    height={1000}
+                    priority
+                    className="w-full h-auto object-contain"
+                  />
       <h2 className="mt-4 text-white font-extralight text-lg sm:text-xl md:text-2xl">
         UK Immigration & Will Writing Solicitors
       </h2>
