@@ -18,7 +18,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/assets/Cut_logo.PNG"
+              src="/assets/Cut_logo.png"
               alt="Lexington Ashworth Advisory"
               width={40}
               height={40}
@@ -26,6 +26,7 @@ const Navbar = () => {
               className="object-contain"
             />
           </Link>
+
 //The changes
 
           {/* Desktop nav */}
