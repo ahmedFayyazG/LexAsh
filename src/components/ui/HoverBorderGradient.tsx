@@ -1,8 +1,8 @@
 "use client";
-import { motion ,stagger, useAnimate } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { useEffect, useState } from "react";
 
+import { motion } from "framer-motion";
+import { cn } from "@/lib/utils";
+import { useEffect, useState, useCallback } from "react";
 
 type Direction = "TOP" | "LEFT" | "BOTTOM" | "RIGHT";
 
@@ -25,13 +25,16 @@ export function HoverBorderGradient({
   const [hovered, setHovered] = useState(false);
   const [direction, setDirection] = useState<Direction>("TOP");
 
-  const rotateDirection = (current: Direction): Direction => {
-    const all: Direction[] = ["TOP", "LEFT", "BOTTOM", "RIGHT"];
-    const i = all.indexOf(current);
-    return clockwise
-      ? all[(i - 1 + all.length) % all.length]
-      : all[(i + 1) % all.length];
-  };
+  const rotateDirection = useCallback(
+    (current: Direction): Direction => {
+      const all: Direction[] = ["TOP", "LEFT", "BOTTOM", "RIGHT"];
+      const i = all.indexOf(current);
+      return clockwise
+        ? all[(i - 1 + all.length) % all.length]
+        : all[(i + 1) % all.length];
+    },
+    [clockwise]
+  );
 
   const movingMap: Record<Direction, string> = {
     TOP: "radial-gradient(20.7% 50% at 50% 0%, #f5e3aa 0%, rgba(255, 255, 255, 0) 100%)",
@@ -43,14 +46,14 @@ export function HoverBorderGradient({
   const highlight =
     "radial-gradient(75% 181% at 50% 50%, #ffecb3 0%, rgba(255, 255, 255, 0) 100%)";
 
-    useEffect(() => {
-      if (!hovered) {
-        const interval = setInterval(() => {
-          setDirection((prev) => rotateDirection(prev));
-        }, duration * 1000);
-        return () => clearInterval(interval);
-      }
-    }, [hovered, rotateDirection, duration]);
+  useEffect(() => {
+    if (!hovered) {
+      const interval = setInterval(() => {
+        setDirection((prev) => rotateDirection(prev));
+      }, duration * 1000);
+      return () => clearInterval(interval);
+    }
+  }, [hovered, rotateDirection, duration]);
 
   return (
     <Tag

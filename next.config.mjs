@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // 👈 Add this line for static export
+  reactStrictMode: true,
   images: {
-    unoptimized: true, // 👈 Required for static export if using next/image
+    unoptimized: true,
     domains: [
       'utfs.io',
       'img.clerk.com',
       'subdomain',
     ],
   },
-  reactStrictMode: false,
+  // ❌ Remove or comment out this line:
+  // output: 'export',
 };
 
 export default nextConfig;

@@ -45,6 +45,7 @@ const blogCards = [
   },
 ];
 
+
 const HomePage = () => {
 
 
@@ -63,12 +64,12 @@ const HomePage = () => {
     playsInline
     className="absolute top-0 left-0 w-full h-full object-cover -z-20"
   >
-    <source src="/assets/hero-bg.mp4" type="video/mp4" />
+    <source src="/assets/HeroBG22.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
 
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/70 -z-10" />
+  <div className="absolute inset-0 bg-black/20 -z-10" />
 
   {/* Content */}
   <div className="flex flex-col items-center justify-center h-full w-full px-4 text-center">
@@ -78,7 +79,6 @@ const HomePage = () => {
         alt="Lexington Ashworth Logo"
         width={1000}
         height={1000}
-        priority
         className="w-full h-auto object-contain"
       />
       <h2 className="mt-4 text-white font-extralight text-lg sm:text-xl md:text-2xl">
@@ -223,7 +223,7 @@ const HomePage = () => {
           className="flex flex-col items-start px-0 md:px-0"
         >
           <div className="flex items-center gap-3">
-            <feature.icon className="w-8 h-8" />
+            <feature.icon  />
             <h3 className="text-lg font-semibold text-neutral-900">
               {feature.title}
             </h3>
@@ -473,11 +473,12 @@ const HomePage = () => {
                     {card.description}
                   </CardItem>
                   <CardItem translateZ="100" className="w-full mt-4">
-                    <img
+                    <Image
                       src={card.image}
                       alt={card.title}
                       height="1000"
                       width="1000"
+                      priority
                       className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
                     />
                   </CardItem>

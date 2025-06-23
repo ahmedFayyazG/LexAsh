@@ -229,7 +229,7 @@ const ServicesPage = () => {
             Lexington Ashworth offers a comprehensive range of expert immigration and estate law services tailored for individuals, families, and businesses across the UK.
           </h2>
           <p className="text-neutral-700 text-lg font-light">
-            Whether you're navigating complex visa applications or planning for the future through will writing and estate planning, our experienced solicitors provide trusted legal guidance every step of the way.
+            Whether your&rsquo; squore navigating complex visa applications or planning for the future through will writing and estate planning, our experienced solicitors provide trusted legal guidance every step of the way.
           </p>
         </div>
 
