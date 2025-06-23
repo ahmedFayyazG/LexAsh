@@ -26,6 +26,7 @@ const Navbar = () => {
               className="object-contain"
             />
           </Link>
+//The changes
 
           {/* Desktop nav */}
           <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
