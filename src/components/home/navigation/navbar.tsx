@@ -147,8 +147,8 @@ const Navbar = () => {
               <li><Link href="#" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">Career</Link></li>
               <li><Link href="#" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">Contact</Link></li>
               <li>
-                <Link href="/sign-in" onClick={closeMenu} className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                  Contact Us
+                <Link href="/" onClick={closeMenu} className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                  Book An Appointment
                 </Link>
               </li>
             </ul>
