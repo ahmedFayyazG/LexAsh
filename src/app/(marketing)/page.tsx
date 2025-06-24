@@ -54,47 +54,39 @@ const HomePage = () => {
 
 
             {/* hero */}
-           
-            <div className="relative w-full h-screen min-h-[500px] max-h-[900px] overflow-hidden p-0 m-0">
-  {/* Background Video */}
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="absolute top-0 left-0 w-full h-full object-cover -z-20"
-  >
-    <source src="/assets/HeroBG22.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+   <div className="relative w-full h-[75vh] min-h-[650px] max-h-[900px] sm:h-screen sm:min-h-[900px] overflow-hidden p-0 m-0">
+    {/* Background Video */}
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="absolute top-0 left-0 w-full h-full object-cover -z-20"
+    >
+      <source src="/assets/HeroBG22.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
 
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/20 -z-10" />
+    {/* Overlay */}
+    <div className="absolute inset-0 bg-black/20 -z-10" />
 
-  {/* Content */}
-  <div className="flex flex-col items-center justify-center h-full w-full px-4 text-center">
-    <div className="w-full max-w-[700px] mx-auto">
-      {/* <Image
-        src="/assets/textOnlyLogo.png"
-        alt="Lexington Ashworth Logo"
-        width={1000}
-        height={1000}
-        className="w-full h-auto object-contain"
-      /> */}
+    {/* Content */}
+    <div className="flex flex-col items-center justify-center h-full w-full px-4 text-center">
+      <div className="w-full max-w-[700px] mx-auto">
         <Image
-                    src="/assets/textOnlyLogo.png"
-                    alt="Lexington Ashworth Here"
-                    width={1000}
-                    height={1000}
-                    priority
-                    className="w-full h-auto object-contain"
-                  />
-      <h2 className="mt-4 text-white font-extralight text-lg sm:text-xl md:text-2xl">
-        UK Immigration & Will Writing Solicitors
-      </h2>
+          src="/assets/textOnlyLogo.png"
+          alt="Lexington Ashworth Here"
+          width={1000}
+          height={1000}
+          priority
+          className="w-full h-auto object-contain"
+        />
+        <h2 className="mt-4 text-white font-extralight text-lg sm:text-xl md:text-2xl">
+          UK Immigration & Will Writing Solicitors
+        </h2>
+      </div>
     </div>
   </div>
-</div>
 
 
 
