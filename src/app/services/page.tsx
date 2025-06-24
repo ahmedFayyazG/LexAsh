@@ -6,6 +6,75 @@ import { useRef, useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import { ScrollText } from "lucide-react";
 import { DiamondIcon } from "@/components/ui/diamond-icon";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
+
+
+
+
+export const projects = [
+  {
+    title: "Work Visas",
+    description: [
+      "Skilled Worker Visa",
+      "Health and Care Worker Visa",
+      "Global Talent Visa",
+      "Temporary Worker Visa"
+    ],
+    link: "/work-visas",
+  },
+  {
+    title: "Family Visas",
+    description: [
+      "Spouse or Partner Visa",
+      "Parent Visa",
+      "Child Visa",
+      "Adult Dependent Relative Visa"
+    ],
+    link: "/family-visas",
+  },
+  {
+    title: "Visitor Visas",
+    description: [
+      "Standard Visitor Visa",
+      "Marriage Visitor Visa",
+      "Permitted Paid Engagement Visa"
+    ],
+    link: "/visitor-visas",
+  },
+  {
+    title: "Settlement & Citizenship",
+    description: [
+      "Indefinite Leave to Remain (ILR)",
+      "Naturalisation as a British Citizen",
+      "EU Settlement Scheme"
+    ],
+    link: "/settlement-citizenship",
+  },
+  {
+    title: "Business Immigration",
+    description: [
+      "Sole Representative Visa",
+      "Start-up and Innovator Visas",
+      "Sponsor Licence Applications"
+    ],
+    link: "/business-immigration",
+  },
+  {
+    title: "Other Legal Services",
+    description: [
+      "Appeals and Judicial Review",
+      "Administrative Review",
+      "Document Certification",
+      "Legal Consultation"
+    ],
+    link: "/other-services",
+  },
+];
+
+
+
+
+
 
 const ServicesPage = () => {
 
@@ -246,10 +315,20 @@ const ServicesPage = () => {
       </div>
 
       {/* Timeline Section */}
+       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-20">
 
-      <div className="w-full px-4 sm:px-6 lg:px-8  mx-auto">
+          <h2 className="text-neutral-900 font-medium text-5xl sm:text-4xl md:text-6xl lg:text-6xl">
+          Services we Offer
+      </h2>
+ <div className="max-w-5xl mx-auto px-8">
+      <HoverEffect items={projects} />
+    </div>
+</div>
+
+
+      {/* <div className="w-full px-4 sm:px-6 lg:px-8  mx-auto">
         <Timeline data={serviceData} />
-      </div>
+      </div> */}
     </section>
     </div>
   );
