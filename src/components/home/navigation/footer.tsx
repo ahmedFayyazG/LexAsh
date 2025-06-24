@@ -16,13 +16,10 @@ const Footer = () => {
           <Image
             src="/assets/logo.png"
             alt="Lexington Ashworth Logo"
-            width={300}
-            height={300}
+            width={800}
+            height={800}
             className="w-auto h-32 object-contain"
           />
-          <p className="text-neutral-400 mt-4 text-sm max-w-xs">
-            Insight • Integrity • Impact.
-          </p>
         </div>
 
         {/* Link Columns */}

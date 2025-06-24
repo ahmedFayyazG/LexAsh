@@ -99,7 +99,7 @@ const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <Link href="/sign-in" className={buttonVariants({ size: "sm", variant: "ghost" })}>
+            <Link href="/" className={buttonVariants({ size: "sm", variant: "ghost" })}>
               Book an Appointment
             </Link>
           </div>
