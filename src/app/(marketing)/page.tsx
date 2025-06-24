@@ -248,8 +248,8 @@ const HomePage = () => {
 </section>
 
                         
-<div className="h-[30rem] w-full rounded-md bg-black flex flex-col items-center justify-start pt-20 relative">
-  <h2 className="z-10 text-3xl md:text-5xl text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white max-w-4xl">
+<div className="h-[35rem] w-full rounded-md bg-black flex flex-col items-center justify-start pt-20 relative">
+  <h2 className="z-10 text-3xl md:text-5xl text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white max-w-4xl p-2">
     Ready to discuss your case?
   </h2>
 
