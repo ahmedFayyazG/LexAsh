@@ -144,7 +144,7 @@ const Navbar = () => {
               <li><Link href="/about" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">About</Link></li>
               <li><Link href="#" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">Our Team</Link></li>
               <li><Link href="#" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">News & Insight</Link></li>
-              <li><Link href="#" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">Career</Link></li>
+              <li><Link href="/careers" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">Career</Link></li>
               <li><Link href="#" onClick={closeMenu} className="hover:text-foreground/80 text-sm uppercase text-neutral-100">Contact</Link></li>
               <li>
                 <Link href="/" onClick={closeMenu} className={buttonVariants({ size: "sm", variant: "ghost" })}>

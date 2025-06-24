@@ -205,7 +205,7 @@ const HomePage = () => {
           
 
 
-<section className="relative w-full overflow-hidden py-12 bg-slate-50">
+<section className="relative w-full overflow-hidden py-12 bg-slate-50 sm:p-5">
   {/* Decorative Gradient Circles */}
   <div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10" />
   <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10" />
