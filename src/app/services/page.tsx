@@ -11,10 +11,10 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 
 
-export const projects = [
+ const projects = [
   {
     title: "Work Visas",
-    description: [
+    points: [
       "Skilled Worker Visa",
       "Health and Care Worker Visa",
       "Global Talent Visa",
@@ -24,7 +24,7 @@ export const projects = [
   },
   {
     title: "Family Visas",
-    description: [
+    points: [
       "Spouse or Partner Visa",
       "Parent Visa",
       "Child Visa",
@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     title: "Visitor Visas",
-    description: [
+    points: [
       "Standard Visitor Visa",
       "Marriage Visitor Visa",
       "Permitted Paid Engagement Visa"
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     title: "Settlement & Citizenship",
-    description: [
+    points: [
       "Indefinite Leave to Remain (ILR)",
       "Naturalisation as a British Citizen",
       "EU Settlement Scheme"
@@ -52,7 +52,7 @@ export const projects = [
   },
   {
     title: "Business Immigration",
-    description: [
+    points: [
       "Sole Representative Visa",
       "Start-up and Innovator Visas",
       "Sponsor Licence Applications"
@@ -61,7 +61,7 @@ export const projects = [
   },
   {
     title: "Other Legal Services",
-    description: [
+    points: [
       "Appeals and Judicial Review",
       "Administrative Review",
       "Document Certification",

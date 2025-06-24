@@ -10,7 +10,7 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
-    description: string[]; // bullet points
+    points: string[]; // ✅ renamed here
     link: string;
   }[];
   className?: string;
@@ -47,7 +47,7 @@ export const HoverEffect = ({
           <Card>
             <CardTitle>{item.title}</CardTitle>
             <ul className="mt-4 space-y-3 text-left">
-              {item.description.map((point, i) => (
+              {item.points.map((point, i) => ( // ✅ renamed here
                 <li key={i} className="flex items-start gap-2">
                   <CheckCircle2 className="min-w-[20px] min-h-[20px] text-emerald-600 dark:text-emerald-400 mt-[2px]" />
                   <span className="text-sm text-zinc-600 dark:text-zinc-300 leading-snug break-words">
