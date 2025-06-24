@@ -18,7 +18,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/assets/Cut_logo.png"
+              src="/assets/Letters_logo.PNG"
               alt="Lexington Ashworth Advisory"
               width={40}
               height={40}
