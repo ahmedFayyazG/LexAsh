@@ -114,7 +114,7 @@ const HomePage = () => {
             <section className="w-full h-[80vh] bg-white flex items-center justify-center px-4 pt-3">
   <div className="w-full max-w-7xl text-center">
  <p
-  className="font-[Arial] font-light text-neutral-800 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-left md:text-center"
+  className="font-[Arial] font-light text-neutral-800 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-center md:text-center"
 >
   Based in Manchester, Lexington Ashworth Solicitors provides authoritative immigration and estate planning guidance across the UK. Our experienced solicitors combine deep legal insight with unwavering integrity to deliver impactful solutions for complex immigration and will writing needs. Every client receives a strategic approach tailored to their unique needs.
 </p>

@@ -286,3 +286,64 @@ export const reviews = [
     body: "I'm at a loss for words. This is amazing. I love it.",
   },
 ];
+export const projects = [
+  {
+    title: "Work Visas",
+    points: [
+      "Skilled Worker Visa",
+      "Health and Care Worker Visa",
+      "Global Talent Visa",
+      "Temporary Worker Visa"
+    ],
+    link: "/work-visas",
+  },
+  {
+    title: "Family Visas",
+    points: [
+      "Spouse or Partner Visa",
+      "Parent Visa",
+      "Child Visa",
+      "Adult Dependent Relative Visa"
+    ],
+    link: "/family-visas",
+  },
+  {
+    title: "Visitor Visas",
+    points: [
+      "Standard Visitor Visa",
+      "Marriage Visitor Visa",
+      "Permitted Paid Engagement Visa"
+    ],
+    link: "/visitor-visas",
+  },
+  {
+    title: "Settlement & Citizenship",
+    points: [
+      "Indefinite Leave to Remain (ILR)",
+      "Naturalisation as a British Citizen",
+      "EU Settlement Scheme"
+    ],
+    link: "/settlement-citizenship",
+  },
+  {
+    title: "Business Immigration",
+    points: [
+      "Sole Representative Visa",
+      "Start-up and Innovator Visas",
+      "Sponsor Licence Applications"
+    ],
+    link: "/business-immigration",
+  },
+  {
+    title: "Other Legal Services",
+    points: [
+      "Appeals and Judicial Review",
+      "Administrative Review",
+      "Document Certification",
+      "Legal Consultation"
+    ],
+    link: "/other-services",
+  },
+];
+
+
