@@ -90,7 +90,7 @@ const HomePage = () => {
       Whether you are facing a visa refusal, a deportation order, or navigating complex compliance issues, Lexington Ashworth Solicitors offers clear, expert legal help. We specialise in appeals, human rights claims, family migration, and sponsor licence solutions across the UK.
     </p>
     <p className="mt-2 text-white text-sm font-medium sm:text-base leading-relaxed text-center sm:text-center">
-      Trusted by individuals and families across the UK — start your immigration journey with confidence.
+      Trusted by individuals and families across the UK. Start your immigration journey with confidence.
     </p>
     <button className="mt-5 px-6 py-2 bg-black text-white rounded-lg font-bold hover:-translate-y-1 transition-transform duration-300">
       Contact Us
