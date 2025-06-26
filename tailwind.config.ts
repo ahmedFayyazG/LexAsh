@@ -1,4 +1,13 @@
+
 module.exports = {
+
+
+  extend: {
+  fontFamily: {
+    arialThin: ['Arial', 'sans-serif'],
+    openSansThin: ['"Open Sans"', 'sans-serif'],
+  },
+},
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',

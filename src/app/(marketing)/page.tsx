@@ -23,7 +23,6 @@ import Link from "next/link";
 import { HoverBorderGradient } from "@/components/ui/HoverBorderGradient";
 import { StarsBackground } from "@/components/ui/stars-background";
 
-
 const blogCards = [
   {
     title: "UK Immigration Updates",
@@ -49,12 +48,15 @@ const blogCards = [
 const HomePage = () => {
 
 
+
     return (
         <section className="w-full relative flex items-center justify-center flex-col ">
 
 
             {/* hero */}
-   <div className="relative w-full h-[75vh] min-h-[650px] max-h-[900px] sm:h-screen sm:min-h-[900px] overflow-hidden p-0 m-0">
+<div className="relative w-full h-[85vh] min-h-[650px] max-h-[900px] sm:h-[85vh] sm:min-h-[700px] overflow-hidden p-0 m-0">
+
+
     {/* Background Video */}
     <video
       autoPlay
@@ -68,24 +70,38 @@ const HomePage = () => {
     </video>
 
     {/* Overlay */}
-    <div className="absolute inset-0 bg-black/20 -z-10" />
-
-    {/* Content */}
-    <div className="flex flex-col items-center justify-center h-full w-full px-4 text-center">
-      <div className="w-full max-w-[700px] mx-auto">
-        <Image
-          src="/assets/textOnlyLogo.png"
-          alt="Lexington Ashworth Here"
-          width={1000}
-          height={1000}
-          priority
-          className="w-full h-auto object-contain"
-        />
-        <h2 className="mt-4 text-white font-extralight text-lg sm:text-xl md:text-2xl">
-          UK Immigration & Will Writing Solicitors
-        </h2>
-      </div>
+    <div className="absolute inset-0 bg-black/8 -z-10" />
+<div className="w-full max-w-[700px] mx-auto mt-10 sm:mt-20 px-4 sm:px-0">
+  <div className="rounded-xl bg-black/25 shadow-lg ring-1 ring-black/5 backdrop-blur-md px-4 py-5 sm:px-6 sm:py-6 text-center">
+    <div className="w-full h-28 sm:h-40 mb-4">
+      <Image
+        src="/assets/textOnlyLogo.png"
+        alt="Lexington Ashworth Logo"
+        width={1000}
+        height={1000}
+        priority
+        className="w-full h-full object-contain"
+      />
     </div>
+    <h2 className="text-white font-semibold text-lg sm:text-xl md:text-2xl leading-snug">
+      Specialist UK Immigration Solicitors – Built on Insight, Integrity, and Impact
+    </h2>
+    <p className="mt-3 text-white text-sm font-medium sm:text-base leading-relaxed text-center sm:text-center">
+      Whether you are facing a visa refusal, a deportation order, or navigating complex compliance issues, Lexington Ashworth Solicitors offers clear, expert legal help. We specialise in appeals, human rights claims, family migration, and sponsor licence solutions across the UK.
+    </p>
+    <p className="mt-2 text-white text-sm font-medium sm:text-base leading-relaxed text-center sm:text-center">
+      Trusted by individuals and families across the UK — start your immigration journey with confidence.
+    </p>
+    <button className="mt-5 px-6 py-2 bg-black text-white rounded-lg font-bold hover:-translate-y-1 transition-transform duration-300">
+      Contact Us
+    </button>
+  </div>
+</div>
+
+
+
+
+
   </div>
 
 
@@ -97,17 +113,16 @@ const HomePage = () => {
 
             <section className="w-full h-[80vh] bg-white flex items-center justify-center px-4 pt-3">
   <div className="w-full max-w-7xl text-center">
-  <p  className="text-neutral-800  font-extralight text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-left md:text-center">
-      Based in Manchester, Lexington Ashworth Solicitors provides authoritative immigration and estate planning guidance across the UK. Our experienced solicitors combine deep legal insight with unwavering integrity to deliver impactful solutions for complex immigration and will writing needs. Every client receives a strategic approach tailored to their unique needs.
-    </p>
+ <p
+  className="font-[Arial] font-light text-neutral-800 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-left md:text-center"
+>
+  Based in Manchester, Lexington Ashworth Solicitors provides authoritative immigration and estate planning guidance across the UK. Our experienced solicitors combine deep legal insight with unwavering integrity to deliver impactful solutions for complex immigration and will writing needs. Every client receives a strategic approach tailored to their unique needs.
+</p>
     {/* Call to Action Button */}
     <div className="w-full mt-8 flex justify-center">
-    <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-  Learn More
-  </span>
-</button>
+    <button className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+  Contact Us
+</button> 
   </div>
   </div>
 </section>
@@ -185,16 +200,13 @@ const HomePage = () => {
 
   {/* Call to Action Button */}
   <div className="w-full mt-8 flex justify-center">
-    <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
-  <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-  <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-3 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+    <button className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
   Contact Us
-  </span>
-</button>
+</button> 
   </div>
 </section>
 
-          
+        
 
 
 <section className="relative w-full overflow-hidden py-12 bg-slate-50 sm:p-5">
@@ -437,7 +449,7 @@ const HomePage = () => {
                     </div>
                 </Container>
             </Wrapper> */}
-
+{/* 
 <Container >
                 <LampContainer className="w-full min-h-[calc(100vh+300px)] flex items-center justify-center px-4 py-12">
             <div className="flex flex-col items-center justify-center text-center w-full text-white">
@@ -452,7 +464,7 @@ const HomePage = () => {
                 </div>
             </div>
           </LampContainer>
-                </Container>
+                </Container> */}
           
 
   {/* Blogs & Insight Section */}
