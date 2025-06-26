@@ -65,14 +65,14 @@ const HomePage = () => {
       playsInline
       className="absolute top-0 left-0 w-full h-full object-cover -z-20"
     >
-      <source src="/assets/HeroBG22.mp4" type="video/mp4" />
+      <source src="/assets/particles-hero.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
     {/* Overlay */}
     <div className="absolute inset-0 bg-black/8 -z-10" />
 <div className="w-full max-w-[700px] mx-auto mt-10 sm:mt-20 px-4 sm:px-0">
-  <div className="rounded-xl bg-black/25 shadow-lg ring-1 ring-black/5 backdrop-blur-md px-4 py-5 sm:px-6 sm:py-6 text-center">
+  <div className="rounded-xl bg-black/02 shadow-lg  ring-black/99 backdrop-blur-md px-4 py-5 sm:px-6 sm:py-6 text-center">
     <div className="w-full h-28 sm:h-40 mb-4">
       <Image
         src="/assets/textOnlyLogo.png"
@@ -92,9 +92,12 @@ const HomePage = () => {
     <p className="mt-2 text-white text-sm font-medium sm:text-base leading-relaxed text-center sm:text-center">
       Trusted by individuals and families across the UK. Start your immigration journey with confidence.
     </p>
-    <button className="mt-5 px-6 py-2 bg-black text-white rounded-lg font-bold hover:-translate-y-1 transition-transform duration-300">
-      Contact Us
-    </button>
+    {/* <button className="mt-5 px-6 py-2 bg-black text-white rounded-lg font-bold hover:-translate-y-1 transition-transform duration-300">
+      
+    </button> */}
+    <button className=" mt-5 shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
+  Contact Us
+</button>
   </div>
 </div>
 
