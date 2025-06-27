@@ -222,7 +222,20 @@ const HomePage = () => {
 </section>
 
 
-
+<section className="w-full px-4 sm:px-8 py-12 sm:py-16 bg-cream flex items-center justify-center">
+  <div className="w-full max-w-5xl aspect-video rounded-2xl overflow-hidden shadow-lg ring-1 ring-white/10">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover object-center scale-[1.07]"
+    >
+      <source src="/assets/family.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
             {/* how it works */}
 
         
