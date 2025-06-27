@@ -1,13 +1,5 @@
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-
-
-  extend: {
-  fontFamily: {
-    arialThin: ['Arial', 'sans-serif'],
-    openSansThin: ['"Open Sans"', 'sans-serif'],
-  },
-},
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -25,9 +17,10 @@ module.exports = {
       },
     },
     extend: {
-
       fontFamily: {
-        sans: ["var(--font-inter)", "sans-serif"], // or 'Inter' if not using next/font
+        sans: ["var(--font-inter)", "sans-serif"], // Inter font via next/font
+        arialThin: ['Arial', 'sans-serif'],
+        openSansThin: ['"Open Sans"', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -63,6 +56,9 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+
+        // ✅ Custom color
+        cream: '#faf8f3',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -80,16 +76,16 @@ module.exports = {
         },
         'automation-zoom-in': {
           '0%': { transform: 'translateY(-30px) scale(0.2)' },
-          '100%': { transform: 'transform: translateY(0px) scale(1)' },
+          '100%': { transform: 'translateY(0px) scale(1)' },
         },
         'flip': {
           to: {
-            transform: "rotate(360deg)",
+            transform: 'rotate(360deg)',
           },
         },
         'rotate': {
           to: {
-            transform: "rotate(90deg)",
+            transform: 'rotate(90deg)',
           },
         },
         'rotate-new': {
@@ -98,32 +94,32 @@ module.exports = {
         },
         'shimmer': {
           from: {
-            backgroundPosition: "0 0",
+            backgroundPosition: '0 0',
           },
           to: {
-            backgroundPosition: "-200% 0",
+            backgroundPosition: '-200% 0',
           },
         },
-        "border-beam": {
-          "100%": {
-            "offset-distance": "100%",
+        'border-beam': {
+          '100%': {
+            'offset-distance': '100%',
           },
         },
-        "marquee": {
-          from: { transform: "translateX(0)" },
-          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        'marquee': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(calc(-100% - var(--gap)))' },
         },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'automation-zoom-in': 'automation-zoom-in 0.5s',
-        'flip': "flip 6s infinite steps(2, end)",
-        'rotate': "rotate 3s linear infinite both",
+        flip: 'flip 6s infinite steps(2, end)',
+        rotate: 'rotate 3s linear infinite both',
         'rotate-new': 'rotate-new 20s linear infinite',
-        'shimmer': "shimmer 2s linear infinite",
-        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
-        "marquee": "marquee var(--duration) linear infinite",
+        shimmer: 'shimmer 2s linear infinite',
+        'border-beam': 'border-beam calc(var(--duration)*1s) infinite linear',
+        marquee: 'marquee var(--duration) linear infinite',
       },
     },
   },

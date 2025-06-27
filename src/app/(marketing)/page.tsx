@@ -53,27 +53,31 @@ const HomePage = () => {
         <section className="w-full relative flex items-center justify-center flex-col ">
 
 
-            {/* hero */}
-<div className="relative w-full h-[85vh] min-h-[650px] max-h-[900px] sm:h-[85vh] sm:min-h-[700px] overflow-hidden p-0 m-0">
+<div className="relative w-full min-h-screen overflow-hidden p-0 m-0">
 
+  {/* Background Video */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover -z-20"
+  >
+    <source src="/assets/particles-hero.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-    {/* Background Video */}
-    <video
-      autoPlay
-      muted
-      loop
-      playsInline
-      className="absolute top-0 left-0 w-full h-full object-cover -z-20"
-    >
-      <source src="/assets/particles-hero.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/8 -z-10" />
 
-    {/* Overlay */}
-    <div className="absolute inset-0 bg-black/8 -z-10" />
-<div className="w-full max-w-[700px] mx-auto mt-10 sm:mt-20 px-4 sm:px-0">
-  <div className="rounded-xl bg-black/02 shadow-lg  ring-black/99 backdrop-blur-md px-4 py-5 sm:px-6 sm:py-6 text-center">
-    <div className="w-full h-28 sm:h-40 mb-4">
+  {/* Content */}
+{/* Content */}
+<div className="w-full max-w-[700px] mx-auto px-4 sm:px-0 py-6 sm:py-10">
+   <div className="rounded-xl bg-black/0 shadow-lg ring-1 ring-black/10 backdrop-blur-md px-4 py-5 sm:px-6 sm:py-6 text-center"> 
+{/* <div className="rounded-xl bg-black/0 shadow-lg ring-1 ring-black/10 px-4 py-5 sm:px-6 sm:py-6 text-center"> */}
+
+    {/* Logo */}
+    <div className="w-full h-24 sm:h-32 mb-6">
       <Image
         src="/assets/textOnlyLogo.png"
         alt="Lexington Ashworth Logo"
@@ -83,61 +87,101 @@ const HomePage = () => {
         className="w-full h-full object-contain"
       />
     </div>
-    <h2 className="text-white font-semibold text-lg sm:text-xl md:text-2xl leading-snug">
-      Specialist UK Immigration Solicitors – Built on Insight, Integrity, and Impact
-    </h2>
-    <p className="mt-3 text-white text-sm font-medium sm:text-base leading-relaxed text-center sm:text-center">
-      Whether you are facing a visa refusal, a deportation order, or navigating complex compliance issues, Lexington Ashworth Solicitors offers clear, expert legal help. We specialise in appeals, human rights claims, family migration, and sponsor licence solutions across the UK.
-    </p>
-    <p className="mt-2 text-white text-sm font-medium sm:text-base leading-relaxed text-center sm:text-center">
-      Trusted by individuals and families across the UK. Start your immigration journey with confidence.
-    </p>
-    {/* <button className="mt-5 px-6 py-2 bg-black text-white rounded-lg font-bold hover:-translate-y-1 transition-transform duration-300">
-      
-    </button> */}
-    <button className=" mt-5 shadow-[0_4px_14px_0_rgb(0,0,0,10%)] hover:shadow-[0_6px_20px_rgba(93,93,93,23%)] px-8 py-2 bg-[#fff] text-[#696969] rounded-md font-light transition duration-200 ease-linear">
-  Contact Us
+
+    <div className="w-full max-w-[700px] mx-auto px-4 sm:px-6 md:px-8 py-6 sm:py-8 text-left sm:text-center">
+      {/* Heading */}
+      <h2 className="text-white font-extralight text-lg sm:text-xl md:text-2xl leading-snug sm:leading-normal">
+        Specialist UK <span className="font-semibold">Immigration Solicitors</span> 
+      </h2>
+
+      {/* Paragraph */}
+      <p className="mt-5 text-neutral-200 font-light text-base sm:text-lg md:text-xl leading-[1.9rem] sm:leading-[2rem] md:leading-[2.3rem] lg:leading-[2.5rem] text-left sm:text-justify">
+        Whether you are facing a 
+        <span className="font-medium text-[#d6c9a3]"> Visa refusal</span>, a 
+        <span className="font-medium text-[#d6c9a3]"> Deportation order</span>, or 
+        <span className="font-medium text-[#d6c9a3]"> Navigating complex compliance issues</span>, Lexington Ashworth Solicitors offers clear, expert legal help. 
+        We specialise in 
+        <span className="font-medium text-[#d6c9a3]"> appeals</span>, 
+        <span className="font-medium text-[#d6c9a3]"> human rights claims</span>, 
+        <span className="font-medium text-[#d6c9a3]"> family migration</span>, and 
+        <span className="font-medium text-[#d6c9a3]"> sponsor licence</span> solutions across the UK.
+      </p>
+</div>
+      {/* Subtext */}
+   <p className="mt-3 text-neutral-300 text-sm sm:text-base font-light leading-relaxed tracking-wide text-left sm:text-center">
+  Trusted by clients across the UK — take the first step toward a secure and successful immigration journey with clarity and confidence.
+</p>
+
+{/* CTA Button */}
+<button
+  className="relative inline-flex items-center justify-center px-10 py-3 mt-4 rounded-full font-medium uppercase tracking-wider text-[#b19777] text-sm sm:text-base bg-[#fdf8f1] font-sans"
+  style={{
+    border: '2px solid transparent',
+    backgroundClip: 'padding-box',
+    backgroundImage:
+      'linear-gradient(#fdf8f1, #fdf8f1), linear-gradient(90deg, #c8a654, #f7e7be, #c8a654)',
+    backgroundOrigin: 'border-box',
+    boxShadow:
+      '0 0 5px rgba(212, 175, 55, 0.15), inset 0 0 6px rgba(255, 255, 255, 0.15)',
+  }}
+>
+  <span className="absolute inset-0 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.1),_transparent)] blur-[1.2px] z-0 pointer-events-none" />
+  <span className="absolute left-1 top-1 w-[6px] h-[6px] bg-white rounded-full blur-[2px] opacity-60"></span>
+  <span className="absolute right-1 top-1 w-[6px] h-[6px] bg-white rounded-full blur-[2px] opacity-60"></span>
+  <span className="relative z-10">Contact Us</span>
 </button>
   </div>
+</div>
 </div>
 
 
 
+            <section className="relative w-full overflow-hidden py-12  bg-cream  md:mb-0">
+  {/* Glowing gradient background (optional, remove if not needed) */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-10 w-[120%] h-full blur-[10rem] bg-gradient-to-b from-[#fef9c3]/20 via-[#eab308]/10 to-transparent" />
 
-
+  {/* Heading */}
+  <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div className="max-w-md mx-auto text-start md:text-center">
+      <h2 className="text-neutral-900 mx-auto pt-10 px-4  sm:px-6 md:px-0 font-medium mb-10 text-5xl sm:text-4xl md:text-6xl lg:text-6xl">
+   Why We Exist
+      </h2>
+    </div>
   </div>
 
-
-
-
-
-
-
-
-            <section className="w-full h-[80vh] bg-white flex items-center justify-center px-4 pt-3">
-  <div className="w-full max-w-7xl text-center">
- <p
-  className="font-[Arial] font-light text-neutral-800 text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-relaxed max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-center md:text-center"
->
-  Based in Manchester, Lexington Ashworth Solicitors provides authoritative immigration and estate planning guidance across the UK. Our experienced solicitors combine deep legal insight with unwavering integrity to deliver impactful solutions for complex immigration and will writing needs. Every client receives a strategic approach tailored to their unique needs.
+  {/* Description */}
+  <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl pt-8 mx-auto mt-6">
+  <p className="text-neutral-800 font-extralight text-xl sm:text-xl md:text-2xl lg:text-3xl leading-[2.6rem] sm:leading-[2.25rem] md:leading-[2.5rem] lg:leading-[2.75rem] max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-left sm:text-justify">
+  Our mission is to deliver outstanding legal service guided by our core values of insight, integrity, and impact. We exist to simplify complex legal challenges, empowering clients with clear guidance and confidence. Each case we undertake is an opportunity to provide meaningful support and create positive outcomes for individuals and businesses navigating critical immigration or estate planning decisions.
 </p>
-    {/* Call to Action Button */}
-    <div className="w-full mt-8 flex justify-center">
-    <button className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
-  Contact Us
-</button> 
-  </div>
-  </div>
+</div>
+
+  {/* Call to Action Button */}
+
 </section>
 
 
 
-<section className="relative w-full overflow-hidden py-12 bg-slate-50">
+
+{/* 
+<section className="w-full bg-cream flex items-center justify-center px-1 pt-24 pb-20 sm:pt-20 sm:pb-28 md:pt-24 md:pb-32 lg:pt-32 lg:pb-40">
+
+<div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mt-6">
+  <p className="text-neutral-800 font-extralight text-xl sm:text-xl md:text-2xl lg:text-3xl leading-[2.6rem] sm:leading-[2.8rem] md:leading-[3rem] lg:leading-[3.25rem] max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-left sm:text-justify">
+  Based in Manchester, Lexington Ashworth Solicitors provides authoritative immigration and estate planning guidance across the UK. Our experienced solicitors combine deep legal insight with unwavering integrity to deliver impactful solutions for complex immigration and will writing needs. Every client receives a strategic approach tailored to their unique needs.
+</p>
+</div>
+</section> */}
+
+
+
+
+<section className="relative w-full overflow-hidden py-12 bg-cream">
   {/* Glowing gradient background */}
   <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-10 w-[120%] h-full blur-[10rem] bg-gradient-to-b from-[#fef9c3]/30 via-[#eab308]/20 to-transparent" />
 
   {/* Heading */}
-  <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <div className="w-full px-4 sm:px-10 lg:px-8 max-w-7xl mx-auto">
     <div className="max-w-md mx-auto text-start md:text-center">
       <h2 className="text-neutral-900 font-medium text-5xl sm:text-4xl md:text-6xl lg:text-6xl ">
         What We Do
@@ -148,7 +192,7 @@ const HomePage = () => {
   {/* Perks Grid */}
   <div className="w-full px-4 sm:px-0 lg:px-8 max-w-7xl mx-auto" >
     <div className="flex flex-col items-center justify-center py-10 md:py-20 w-full" >
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-x-8 gap-y-12" >
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full gap-x-8 gap-y-12" >
   {perks.map((perk) => (
     <div
       key={perk.title}
@@ -166,7 +210,7 @@ const HomePage = () => {
     {perk.title}
   </h3>
 </div>
-      <p className="text-black  mt-2 text-start lg:text-start font-light text-neutral-800 tracking-wide ">
+      <p className="  mt-2 text-start lg:text-start font-light text-neutral-900 tracking-wide ">
         {perk.info}
       </p>
     </div>
@@ -180,39 +224,11 @@ const HomePage = () => {
 
 
             {/* how it works */}
-            <section className="relative w-full overflow-hidden py-12 bg-slate-50">
-  {/* Glowing gradient background (optional, remove if not needed) */}
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-10 w-[120%] h-full blur-[10rem] bg-gradient-to-b from-[#fef9c3]/20 via-[#eab308]/10 to-transparent" />
-
-  {/* Heading */}
-  <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div className="max-w-md mx-auto text-start md:text-center">
-      <h2 className="text-neutral-900 font-medium text-5xl sm:text-4xl md:text-6xl lg:text-6xl">
-   Why We Exist
-      </h2>
-    </div>
-  </div>
-
-  {/* Description */}
-  <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mt-6">
-  <p  className="text-neutral-800  font-extralight text-xl sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-5xl mx-auto px-4 sm:px-6 md:px-0 text-left md:text-center">
-  Our mission is to deliver outstanding legal service guided by our core values of insight, integrity, and impact. We exist to simplify complex legal challenges, empowering clients with clear guidance and confidence. Each case we undertake is an opportunity to provide meaningful support and create positive outcomes for individuals and businesses navigating critical immigration or estate planning decisions.
-    </p>
-   
-  </div>
-
-  {/* Call to Action Button */}
-  <div className="w-full mt-8 flex justify-center">
-    <button className="px-6 py-2 bg-black text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
-  Contact Us
-</button> 
-  </div>
-</section>
 
         
 
 
-<section className="relative w-full overflow-hidden py-12 bg-slate-50 sm:p-5">
+<section className="relative w-full overflow-hidden py-12 bg-cream sm:p-5">
   {/* Decorative Gradient Circles */}
   <div className="hidden md:block absolute top-0 -right-1/3 w-72 h-72 bg-primary rounded-full blur-[10rem] -z-10" />
   <div className="hidden md:block absolute bottom-0 -left-1/3 w-72 h-72 bg-indigo-600 rounded-full blur-[10rem] -z-10" />
@@ -231,7 +247,7 @@ const HomePage = () => {
   {/* Feature Grid */}
   <div className="w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 w-full gap-8">
         {features.map((feature) => (
           <div
           key={feature.title}
@@ -255,25 +271,47 @@ const HomePage = () => {
 </section>
 
                         
-<div className="h-[35rem] w-full rounded-md bg-black flex flex-col items-center justify-start pt-20 relative">
-  <h2 className="z-10 text-3xl md:text-5xl text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white max-w-4xl p-2">
-    Ready to discuss your case?
-  </h2>
+<div className="relative h-[35rem] w-full overflow-hidden rounded-md bg-black flex items-center justify-center">
+  {/* Radial Background Pattern */}
+  <div className="absolute inset-0 z-0">
+    <div className="relative h-full w-full">
+      <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[900px] w-[900px] rounded-full bg-[radial-gradient(circle_400px_at_center,#fbfbfb36,#000)]" />
+    </div>
+  </div>
 
-  <div className="flex flex-col items-center justify-center z-10 mt-6 px-4">
-    <p className="text-xl md:text-2xl text-center text-neutral-300 max-w-3xl leading-relaxed">
+  {/* Content */}
+  <div className="relative z-10 flex flex-col items-center justify-center px-4 text-center max-w-4xl">
+    <h2 className="text-3xl md:text-5xl tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white p-2">
+      Ready to discuss your case?
+    </h2>
+
+    <p className="mt-6 text-xl md:text-2xl text-neutral-300 leading-relaxed">
       Contact us today to schedule your free consultation. We will listen to your situation, answer your questions, and outline a clear plan moving forward. Take the first step towards a confident resolution by booking your consultation now.
     </p>
 
-    <button className="mt-6 px-6 py-2 bg-white text-gray-700 rounded-md text-base font-medium shadow-md hover:shadow-lg transition duration-200">
-      Book an Appointment
+    <button
+      className="relative inline-flex items-center justify-center px-10 py-3 mt-6 rounded-full font-medium uppercase tracking-wider text-[#b19777] text-sm sm:text-base bg-[#fdf8f1] font-sans"
+      style={{
+        border: '2px solid transparent',
+        backgroundClip: 'padding-box',
+        backgroundImage:
+          'linear-gradient(#fdf8f1, #fdf8f1), linear-gradient(90deg, #c8a654, #f7e7be, #c8a654)',
+        backgroundOrigin: 'border-box',
+        boxShadow:
+          '0 0 5px rgba(212, 175, 55, 0.15), inset 0 0 6px rgba(255, 255, 255, 0.15)',
+      }}
+    >
+      <span className="absolute inset-0 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.1),_transparent)] blur-[1.2px] z-0 pointer-events-none" />
+      <span className="absolute left-1 top-1 w-[6px] h-[6px] bg-white rounded-full blur-[2px] opacity-60"></span>
+      <span className="absolute right-1 top-1 w-[6px] h-[6px] bg-white rounded-full blur-[2px] opacity-60"></span>
+      <span className="relative z-10">Book an Appointment</span>
     </button>
   </div>
-
-  <StarsBackground />
 </div>
 
-<section className="relative w-full overflow-hidden py-12 bg-slate-50">
+
+
+<section className="relative w-full overflow-hidden py-12 bg-cream">
   {/* Optional Glowing Background */}
   <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-10 w-[120%] h-full blur-[10rem] bg-gradient-to-b from-[#fef9c3]/20 via-[#eab308]/10 to-transparent" />
 
@@ -471,7 +509,7 @@ const HomePage = () => {
           
 
   {/* Blogs & Insight Section */}
-  <section className="w-full py-10 bg-slate-50">
+  <section className="w-full py-10 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
           <h2 className="text-neutral-900 font-medium text-5xl sm:text-4xl md:text-6xl lg:text-6xl">

@@ -147,17 +147,22 @@ export const perks = [
   {
     icon: StyledDiamondIcon,
     title: "Personal Immigration",
-    info: "We help individuals plan and protect their estates. Our solicitors draft clear, comprehensive wills and estate plans to safeguard your legacy. We also advise on powers of attorney, inheritance issues, and estate administration, ensuring your loved ones are cared for according to your wishes.",
+    info: "We provide tailored legal support across the full range of UK personal immigration matters. We assist with visa applications including Spouse, Partner, Child, Parent, and Adult Dependent Visas, as well as UK Visitor Visas, Indefinite Leave to Remain (ILR), and British Citizenship applications.We specialise in complex cases involving visa refusals, human rights claims, deportation challenges, judicial reviews, and administrative reviews. Whether reuniting families or safeguarding individual rights, we help clients across the UK navigate the immigration process with clarity and care.",
   },
   {
     icon: StyledDiamondIcon,
     title: "Business Immigration",
-    info: "We advise businesses of all sizes on UK immigration compliance and workforce mobility. We help companies obtain and maintain Sponsor Licences, navigate skilled worker and global mobility routes, and manage employee relocations. Our strategic guidance ensures your business can grow and succeed while meeting immigration requirements.",
+    info: "We offer strategic immigration solutions for UK businesses, entrepreneurs, and overseas investors. We advise on Skilled Worker Visas, Health and Care Worker Visas, Global Business Mobility routes, and the Innovator Founder Visa for those bringing new ventures to the UK.We also support UK employers in obtaining and maintaining Sponsor Licences, ensuring full compliance with Home Office regulations. Whether you are scaling your company or relocating key personnel, we help you secure the right visas and stay ahead of evolving immigration rules",
   },
   {
     icon: StyledDiamondIcon,
-    title: "Wills & Estates",
-    info: "We help individuals plan and protect their estates. Our solicitors draft clear, comprehensive wills and estate plans to safeguard your legacy. We also advise on powers of attorney, inheritance issues, and estate administration, ensuring your loved ones are cared for according to your wishes.",
+    title: "Will Writing (Including Islamic Wills)",
+    info: "We offer expert will writing services that reflect your wishes, values, and faith. Our solicitors draft clear, legally sound wills tailored to your personal and family needs including Shariah-compliant Islamic Wills. With a focus on simplicity and legal precision, we help you protect your legacy and provide peace of mind for your loved ones. Fixed-fee pricing and confidential consultations ensure accessible, professional planning you can trust.",
+  },
+  {
+    icon: StyledDiamondIcon,
+    title: "Self-Sponsorship",
+    info: "Self-sponsorship empowers active business owners to sponsor themselves via their own UK company, using the Skilled Worker visa route. This strategy lets you incorporate a business, apply for a Sponsor Licence, and assign a Certificate of Sponsorship to yourself all without relying on external employers. Our specialist team will guide you through business viability assessments, UK incorporation, licence applications, immigration compliance, and Skilled Worker visa submissions with precision and insight. This route provides a credible path to permanent residence and citizenship, while giving you complete control over your venture.",
   },
 ];
 
