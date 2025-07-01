@@ -17,7 +17,7 @@ const AboutPage = () => {
   }; // ✅ ← this bracket was missing
 
   return (
-    <section className="w-full flex flex-col bg-white">
+    <section className="w-full flex flex-col bg-cream">
       {/* Hero Section */}
       <div className="relative w-full h-[70vh] min-h-[400px] max-h-[800px] overflow-hidden">
         <Image
@@ -35,7 +35,7 @@ const AboutPage = () => {
       </div>
 
       {/* Intro Section */}
-      <div className="w-full bg-white py-16 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10 max-w-full mx-auto">
+      <div className="w-full bg-cream py-16 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10 max-w-full mx-auto">
         <div className="md:w-1/2">
           <h2 className="text-2xl md:text-3xl font-medium text-neutral-900 mb-4">
             Trusted Legal Experts with a Commitment to Client Success
@@ -62,8 +62,8 @@ Our clients choose us not just for what we can do, but for the better experience
               {/* Accordion Section */}
 
       </div>
-      <section className="w-full flex flex-col bg-white mb-2">
-      <div className="w-full md:w-1/2 mx-auto bg-white p-6 rounded-lg shadow-md border text-neutral-900 border-gray-200 dark:bg-neutral-900 dark:border-neutral-800">
+      <section className="w-full flex flex-col bg-cream mb-2">
+      <div className="w-full md:w-1/2 mx-auto bg-neutral-50 p-6 rounded-lg shadow-md border text-neutral-900 border-gray-200 dark:bg-neutral-900 dark:border-neutral-800">
         <Accordion className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger
@@ -149,7 +149,7 @@ Our clients choose us not just for what we can do, but for the better experience
       </div>
 </section>
       {/* Vision & Values Section */}
-      <div className="bg-gray-50 dark:bg-neutral-900 w-full py-16 px-4 sm:px-6 lg:px-8 max-w-full mx-auto">
+      <div className="bg-cream dark:bg-neutral-900 w-full py-16 px-4 sm:px-6 lg:px-8 max-w-full mx-auto">
         <h3 className="text-2xl md:text-3xl font-semibold text-center text-neutral-900 dark:text-white mb-10">
           Our Vision & Values
         </h3>

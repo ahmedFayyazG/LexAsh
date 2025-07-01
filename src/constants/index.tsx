@@ -293,61 +293,44 @@ export const reviews = [
 ];
 export const projects = [
   {
-    title: "Work Visas",
+    title: "Personal Immigration",
     points: [
-      "Skilled Worker Visa",
-      "Health and Care Worker Visa",
-      "Global Talent Visa",
-      "Temporary Worker Visa"
+      "Spouse, Partner, Child, Parent, and Adult Dependent Visas",
+      "UK Visitor Visas (Standard, Marriage, Permitted Paid Engagement)",
+      "Indefinite Leave to Remain (ILR) and British Citizenship",
+      "Human rights claims, deportation challenges, judicial reviews"
     ],
-    link: "/work-visas",
-  },
-  {
-    title: "Family Visas",
-    points: [
-      "Spouse or Partner Visa",
-      "Parent Visa",
-      "Child Visa",
-      "Adult Dependent Relative Visa"
-    ],
-    link: "/family-visas",
-  },
-  {
-    title: "Visitor Visas",
-    points: [
-      "Standard Visitor Visa",
-      "Marriage Visitor Visa",
-      "Permitted Paid Engagement Visa"
-    ],
-    link: "/visitor-visas",
-  },
-  {
-    title: "Settlement & Citizenship",
-    points: [
-      "Indefinite Leave to Remain (ILR)",
-      "Naturalisation as a British Citizen",
-      "EU Settlement Scheme"
-    ],
-    link: "/settlement-citizenship",
+    link: "/personal-immigration",
   },
   {
     title: "Business Immigration",
     points: [
-      "Sole Representative Visa",
-      "Start-up and Innovator Visas",
-      "Sponsor Licence Applications"
+      "Skilled Worker and Health & Care Worker Visas",
+      "Global Business Mobility & Innovator Founder Visas",
+      "Sponsor Licence Applications & Compliance Support",
+      "Strategic immigration planning for businesses"
     ],
     link: "/business-immigration",
   },
   {
-    title: "Other Legal Services",
+    title: "Will Writing",
     points: [
-      "Appeals and Judicial Review",
-      "Administrative Review",
-      "Document Certification",
-      "Legal Consultation"
+      "Professionally drafted legal wills",
+      "Islamic Wills (Shariah-compliant)",
+      "Fixed-fee services with confidential advice",
+      "Peace of mind for your loved ones"
     ],
-    link: "/other-services",
+    link: "/will-writing",
+  },
+  {
+    title: "Self-Sponsorship",
+    points: [
+      "Skilled Worker visa via your own UK company",
+      "Business incorporation and sponsor licence guidance",
+      "Full immigration compliance support",
+      "Pathway to permanent residency & citizenship"
+    ],
+    link: "/self-sponsorship",
   },
 ];
 

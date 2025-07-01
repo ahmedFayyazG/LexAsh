@@ -8,6 +8,8 @@ import Link from "next/link";
 import { Menu, X, Plus, Minus } from "lucide-react";
 import { useRouter } from "next/navigation";
 
+
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showServicesSubmenu, setShowServicesSubmenu] = useState(false);
@@ -35,7 +37,7 @@ const Navbar = () => {
 
           {/* Desktop nav */}
           <nav className="hidden md:block absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <ul className="flex items-center justify-center gap-8">
+            <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 max-w-[90vw] text-[0.8rem] md:text-[0.75rem] lg:text-sm xl:text-base">
               <li>
                 <Link
                   href="/"
@@ -90,7 +92,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/our-Team"
                   className="hover:text-foreground/80 text-sm uppercase text-neutral-100"
                 >
                   Our Team
@@ -210,7 +212,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/our-Team"
                   onClick={closeMenu}
                   className="hover:text-foreground/80 text-sm uppercase text-neutral-100"
                 >
